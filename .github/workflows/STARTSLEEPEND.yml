@@ -21,7 +21,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
     - name: Start Torque Sandbox
-      id: start-sandbox
+      id: start-sandbox1
       uses: QualiTorque/torque-start-sb-action@v0.1.2
       with:
         space: qa-space1
