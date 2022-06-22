@@ -24,7 +24,7 @@ jobs:
       id: start-sandbox
       uses: QualiTorque/torque-start-sb-action@v0.1.2
       with:
-        space:  
+        space: a 
         blueprint_name: provision-s3-buckets
         torque_token: ${{ secrets.MYTOKEN }}
         duration: 120
