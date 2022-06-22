@@ -24,10 +24,10 @@ jobs:
       id: start-sandbox
       uses: QualiTorque/torque-start-sb-action@v0.1.2
       with:
-        space: Sample
-        blueprint_name: rita in sandbox
+        space: qa-space1
+        blueprint_name: provision-s3-buckets
         torque_token: ${{ secrets.MYTOKEN }}
-        duration: 120
+        duration: 
         timeout: 30
         #inputs: 'PORT=8080,AWS_INSTANCE_TYPE=m5.large'
         torque_url: "https://preview.qtorque.io"
