@@ -22,7 +22,7 @@ jobs:
     steps:
     - name: Start Torque Sandbox
       id: start-sandbox
-      uses: QualiTorque/torque-start-sb-action@v
+      uses: QualiTorque/torque-start-sb-action@v1.1.1
       with:
         space: qa-space1
         blueprint_name: provision-s3-buckets
