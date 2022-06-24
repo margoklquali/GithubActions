@@ -29,7 +29,7 @@ jobs:
         torque_token: ${{ secrets.MYTOKEN }}
         duration: 120
         timeout: 0
-        inputs: 'replicaCount=3'
+        # inputs: 'replicaCount=3'
         torque_url: "https://preview.qtorque.io"
     - name: Sleep Sandbox
       run: sleep 120
