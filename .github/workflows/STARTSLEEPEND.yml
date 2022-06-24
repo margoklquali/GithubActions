@@ -28,11 +28,11 @@ jobs:
         blueprint_name: provision-s3-buckets
         torque_token: ${{ secrets.MYTOKEN }}
         duration: 120
-        timeout: 1
+        timeout: 0
         #inputs: 'PORT=8080,AWS_INSTANCE_TYPE=m5.large'
         torque_url: "https://preview.qtorque.io"
     - name: Sleep Sandbox
-      run: sleep 20
+      run: sleep 120
       
     - name: Stop sandbox
       uses: QualiTorque/torque-end-sb-action@v0.1.1
