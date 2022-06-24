@@ -26,7 +26,7 @@ jobs:
       with:
         space: qa-space1
         blueprint_name: provision-s3-buckets
-        torque_token: ${{ secrets.MYTOKEN }}
+        torque_token: ${{ secrets.INVALIDTOKEN }}
         duration: 120
         timeout: 0
         # inputs: 'replicaCount=3'
@@ -39,6 +39,6 @@ jobs:
       with:
         space: qa-space1
         sandbox_id: ${{ steps.start-sandbox.outputs.sandbox_id }}
-        torque_token: ${{ secrets.MYTOKEN }} 
+        torque_token: ${{ secrets.INVALIDTOKEN }} 
         torque_url: "https://preview.qtorque.io"
       
