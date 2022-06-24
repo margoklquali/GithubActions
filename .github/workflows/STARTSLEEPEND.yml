@@ -25,7 +25,7 @@ jobs:
       uses: QualiTorque/torque-start-sb-action@v0.1.2
       with:
         space: Sample
-        blueprint_name: Bitnami Nginx Helm Chart
+        blueprint_name: "Bitnami Nginx Helm Chart"
         torque_token: ${{ secrets.MYTOKEN }}
         duration: 120
         timeout: 0
