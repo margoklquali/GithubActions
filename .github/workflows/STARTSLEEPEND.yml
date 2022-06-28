@@ -39,6 +39,6 @@ jobs:
       with:
         space: qa-space1
         sandbox_id: ${{ steps.start-sandbox.outputs.sandbox_id }}
-        torque_token: ${{ secrets.RITATOKEN }} 
+        torque_token: ${{ secrets.MYTOKEN }} 
         torque_url: "https://preview.qtorque.io"
       
