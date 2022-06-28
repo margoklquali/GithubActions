@@ -32,7 +32,7 @@ jobs:
         # inputs: 'replicaCount=3'
         torque_url: "https://preview.qtorque.io"
     - name: Sleep Sandbox
-      run: sleep 30
+      run: sleep 120
       
     - name: Stop sandbox
       uses: QualiTorque/torque-end-sb-action@v0.1.1
