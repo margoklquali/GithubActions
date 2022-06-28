@@ -32,13 +32,13 @@ jobs:
         # inputs: 'replicaCount=3'
         torque_url: "https://preview.qtorque.io"
     - name: Sleep Sandbox
-      run: sleep 120
+      run: sleep 30
       
     - name: Stop sandbox
       uses: QualiTorque/torque-end-sb-action@v0.1.1
       with:
         space: qa-space1
         sandbox_id: ${{ steps.start-sandbox.outputs.sandbox_id }}
-        torque_token: ${{ secrets.INVALIDTOKEN }} 
+        torque_token: ${{ secrets.MYTOKEN }} 
         torque_url: "https://preview.qtorque.io"
       
