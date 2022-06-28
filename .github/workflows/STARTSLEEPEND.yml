@@ -28,7 +28,7 @@ jobs:
         blueprint_name: provision-s3-buckets
         torque_token: ${{ secrets.RITATOKEN }}
         duration: 120
-        timeout: 5
+        timeout: 0
         # inputs: 'replicaCount=3'
         torque_url: "https://preview.qtorque.io"
     - name: Sleep Sandbox
